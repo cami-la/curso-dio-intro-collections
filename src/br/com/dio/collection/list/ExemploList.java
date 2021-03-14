@@ -6,7 +6,7 @@ class ExemploList {
     public static void main(String[] args) {
 // Dada uma lista com 7 notas de um aluno [7, 8.5, 9.3, 5, 7, 0, 3.6], faça:
 
-//        Crie uma lista e coloque as sete notas.
+//      Crie uma lista e coloque as sete notas.
         List<Double> notas = new ArrayList<>();
         notas.add(7d);
         notas.add(8.5);
@@ -16,16 +16,16 @@ class ExemploList {
         notas.add(0d);
         notas.add(3.6d);
 
-        notas.remove(new Double(7d));
+        /*notas.remove(new Double(7d));
         notas.remove(new Double(7d));
         notas.remove(1);
 
-        System.out.println(notas);
+        System.out.println(notas);*/
 
         //List<Double> notas1 = Arrays.asList(7d, 8.5, 9.3, 5d, 7d, 0d, 3.6);
         //List<Double> notas2 = List.of(7d, 8.5, 9.3, 5d, 7d, 0d, 3.6);
 
-/*        System.out.println("Exiba se a lista está vazia: " + notas.isEmpty());
+        System.out.println("Exiba se a lista está vazia: " + notas.isEmpty());
         System.out.println("Exiba todas as notas na ordem em que foram informados, um ao lado do outro: " + notas.toString());
         System.out.println("Exiba a terceira nota adicionada: " + notas.get(2));
         Collections.sort(notas);
@@ -50,7 +50,6 @@ class ExemploList {
         System.out.println("Confira novamente se está vazia: " + notas.isEmpty());
         System.out.println("Encerre o programa com uma mensagem: ");
         System.out.println("Aprendi um pouco sobre List e seus métodos!");
-*/
     }
 
 
