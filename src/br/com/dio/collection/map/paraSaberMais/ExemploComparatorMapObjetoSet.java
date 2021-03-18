@@ -6,11 +6,10 @@ import java.util.*;
 Crie uma classe Curso que possua os atributos: nome, disciplina.
 Em seguida, instancie 3 objetos alunos e para cada aluno uma lista contendo 2 cursos
 fazendo a relação entre eles dentro de um dicionário.
-Feito isso, exiba o dicionário com os seguintes requisitos:
-1. Nome do aluno e matrícula
-2. Nome das disciplinas na qual estão matriculados
+Feito isso, exiba o dicionário com o seguintes requisito:
+Key: Nome do aluno e matrícula - Value: Nome das disciplinas na qual estão matriculados
 */
-public class ExemploComparatorMapList {
+public class ExemploComparatorMapObjetoSet {
     public static void main(String[] args) {
         Aluno aluno2 = new Aluno("Jon", 124);
         Aluno aluno3 = new Aluno("Simba", 125);

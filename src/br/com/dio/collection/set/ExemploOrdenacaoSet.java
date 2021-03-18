@@ -10,7 +10,7 @@ c) Gênero;
 d) Tempo de Episódio;
 c) Nome, gênero e tempoEpisodio;
 */
-public class ExemploComparacaoSet {
+public class ExemploOrdenacaoSet {
     public static void main(String[] args) {
 
 

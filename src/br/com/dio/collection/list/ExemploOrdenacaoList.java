@@ -7,7 +7,7 @@ a) Nome;
 b) Idade;
 d) Nome, Idade, Cor;
  */
-public class ExemploComparacaoList {
+public class ExemploOrdenacaoList {
     public static void main(String[] args) {
 
     }

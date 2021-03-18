@@ -11,7 +11,7 @@ a) Duração do curso;
 b) Nome do aluno;
 d) Matricula do aluno;
 */
-public class ExemploComparatorMap {
+public class ExemploComparatorMapObjetoObjeto {
     public static void main(String[] args) {
         Aluno aluno2 = new Aluno("Jon", 124);
         Aluno aluno3 = new Aluno("Simba", 125);
