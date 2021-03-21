@@ -13,6 +13,16 @@ public class ExemploMap {
  modelo = kwid - consumo = 15,6 km/l
  */
 //        System.out.println("Crie um dicionário que relacione os modelos e seus respectivos consumos: ");
+
+
+        //Map carros = new HashMap(); //antes do java 5
+        //Map<String, Double> carrosPopulares2020 = new HashMap<>(3);
+        //HashMap<String, Double> carrosPopulares2020 = new HashMap<>();
+        /*Map<String, Double> carrosPopulares2020 =
+            Map.of("gol", 14.4, "uno", 15.6, "mobi", 16.1, "hb20", 14.5, "kwid", 15.6);
+        */
+        //Map<String, Double> carrosPopulares2020 = new HashMap<>(3); //Generics (java 5) - Diamond Operator (Java 7)
+
 //        System.out.println("Substitua o consumo do gol por 15,2 km/l: ");
 //        System.out.println("Confira se o modelo tucson está no dicionário: ");
 //        System.out.println("Adicione o modelo siena com o consumo de 15,6 km/l: ");
@@ -24,7 +34,7 @@ public class ExemploMap {
 //        System.out.println("Exiba o modelo maior consumo e seu valor: " );
 //        System.out.println("Exiba a soma dos consumos: ");
 //        System.out.println("Exiba a média dos consumos deste dicionário de carros: ");
-//        System.out.println("Remova os modelos com o consumo maior que 15 km/l: ");
+//        System.out.println("Remova os modelos com o consumo igual a 15,6 km/l: ");
 //        System.out.println("Ordene a dicionário por modelo");
 //        System.out.println("Apague o conjunto de carros: ");
 //        System.out.println("Confira se a lista está vazia: ");

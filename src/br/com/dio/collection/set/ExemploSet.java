@@ -6,6 +6,22 @@ public class ExemploSet {
     public static void main(String[] args) {
 // Dada uma lista com 7 notas de um aluno [7, 8.5, 9.3, 5, 7, 0, 3.6], faça:
 //        System.out.println(" Crie um conjunto e coloque as sete notas.: ");
+
+
+        //Set notas = new HashSet(); //antes do java 5
+        //Set<Double> notas = new HashSet<Double>(3); //Generics (java 5) - Diamond Operator (Java 7)
+        //HashSet<Double> notas = new HashSet<>();
+        /*Set<Double> notas = Arrays.asList(7d, 8.5, 9.3, 5d, 7d, 0d, 3.6);
+        notas.add(10d);
+        System.out.println(notas);
+        */
+        /*Set<Double> notas = Set.of(7d, 8.5, 9.3, 5d, 7d, 0d, 3.6);
+        notas2.add(1d);
+        notas2.remove(5d);
+        System.out.println(notas);
+        */
+        //Set<Double> notas = new HashSet<>();
+
 //        System.out.println("Substitua a 5 nota pela nota 6.0: ");
 //        System.out.println("Confira se a nota 5 está na lista: ");
 //        System.out.println("Exiba a posição da nota 5: ");
