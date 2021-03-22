@@ -2,6 +2,7 @@ package br.com.dio.collection.set;
 
 
 import java.util.*;
+import java.util.stream.Stream;
 
 public class ExemploSet {
     public static void main(String[] args) {
@@ -10,6 +11,7 @@ public class ExemploSet {
 
         Set<Double> notas = new HashSet<>(Arrays.asList(7d, 8.5, 9.3, 5d, 7d, 0d, 3.6));
         System.out.println(notas.toString());
+
 
         //Set notas = new HashSet(); //antes do java 5
         //Set<Double> notas = new HashSet<Double>(3); //Generics (java 5) - Diamond Operator (Java 7)
