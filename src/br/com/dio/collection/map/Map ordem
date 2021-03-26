@@ -1,5 +1,7 @@
-[] class Livro - nome e qtdPaginas
-[] new HashMap()
-[] new LinkedHashMap()
-[] new TreeMap()
-[] new ComparatorNomeLivro()
+[x] class Livro - nome e qtdPaginas
+[x] new HashMap()
+[x] new LinkedHashMap()
+[x] new TreeMap()
+[x] new TreeSet()
+[x] addAll
+[x] new ComparatorNomeLivro()
