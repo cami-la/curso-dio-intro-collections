@@ -1,0 +1,9 @@
+[] class Gato - nome, idade, cor
+[] new ArrayList()
+[] Collections.shuffle()
+[] sort()
+[] Collections.sort()
+[] Comparable
+[] new ComparatorIdade()
+[] new ComparatorCor()
+[] ComparatorNomeGeneroTempoEpisodio()

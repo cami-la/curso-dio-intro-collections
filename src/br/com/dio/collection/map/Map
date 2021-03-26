@@ -1,0 +1,17 @@
+[] Iniciar
+[] toString()
+[] put()
+[] containsKey()
+[] get()
+[] keySet()
+[] values
+[] entrySet();
+[] getValue();
+[] getKey();
+[] iterator()
+[] iterator().hasNext()
+[] iterator().next()
+[] LinkedHashMap()
+[] new TreeMap()
+[] clear()
+[] isEmpty()

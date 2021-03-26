@@ -1,0 +1,6 @@
+[] class Serie - nome, gênero, tempoEpisodio
+[] new HashMap()
+[] new LinkedHashMap()
+[] new TreeSet()
+[] Comparable
+[] ComparatorNomeGeneroTempoEpisodio()
