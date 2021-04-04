@@ -1,0 +1,9 @@
+[x] class Serie - nome, gênero, tempoEpisodio
+[x] equals and hashcode
+https://dzone.com/articles/working-with-hashcode-and-equals-in-java
+[x] new HashMap()
+[x] new LinkedHashMap()
+[x] new TreeSet()
+[x] Comparable
+[x] addAll
+[x] ComparatorNomeGeneroTempoEpisodio()
