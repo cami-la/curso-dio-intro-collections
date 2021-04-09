@@ -1,0 +1,31 @@
+[x] stream - Fluxo de dados que não altera a coleção
+https://www.oracle.com/br/technical-resources/articles/java-stream-api.html
+https://medium.com/@racc.costa/streams-no-java-8-e-no-java-9-36177c5c3313
+https://winterbe.com/posts/2014/07/31/java8-stream-tutorial-examples/
+[x] operações intermediárias - Permite operações encadeadas
+[x] operações finais - Fecha o fluxo
+https://www.geeksforgeeks.org/stream-in-java/
+---
+[x] forEach(new Consumer())
+[x] skip()
+[x] collect(Collectors.joining())
+[x] distinct()
+[x] count()
+[x] limit()
+[x] collect(Collectors.toSet())
+[x] map(new Function())
+[x] collect(Collectors.toList())
+[x] filter (new Function())
+[x] sorted()
+[x] mapToInt
+[x] sum()
+[x] average()
+[x] ifPresent()
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html
+https://www.baeldung.com/java-optional
+[x] min
+[x] max
+*[x] removeIf(new Predicate())
+[x] collect(Collectors.groupingBy(new Function())
+
+
