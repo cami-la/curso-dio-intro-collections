@@ -28,9 +28,9 @@ Curso este que tive a honra de co-criar com a plataforma de cursos online <stron
 🔸 <strong> Visão geral:  Java Collections Framework e hierarquia </strong>
 
 🔸 <strong> List </strong><br>
-	  Coleção com iterações ordenadas: List
-	  Conhecendo os métodos
-	  Ordenação da coleção List
+	  Coleção com iterações ordenadas: List<br>
+	  Conhecendo os métodos<br>
+	  Ordenação da coleção List<br>
 	 
 🔸 <strong> Set </strong><br>
 	  Coleção com singularidade: Set<br>
