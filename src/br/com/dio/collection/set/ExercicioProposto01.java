@@ -53,7 +53,7 @@ public class ExercicioProposto01 {
         System.out.println("Remova todas as cores que não começam com a letra “v”: ");
         Iterator<String> iterator2 = coresArcoIris.iterator();
         while (iterator2.hasNext()) {
-            if (iterator2.next().startsWith("v")) iterator2.remove();
+            if (!iterator2.next().startsWith("v")) iterator2.remove();
         }
         System.out.println(coresArcoIris);
 
