@@ -91,7 +91,7 @@ public class ExerciciosStreamAPI {
                 .filter(i -> (i % 2 == 0))
                 .mapToInt(Integer::intValue)
                 .sum();
-        System.out.println("Pegue apenas os números ímpares e some: " + somaDosNumerosPares);
+        System.out.println("Pegue apenas os números pares e some: " + somaDosNumerosPares);
 
         System.out.println("Mostre a lista na ordem númerica: ");
         List<Integer> numerosOrdemNatural = numerosAleatoriosInteger.stream()
