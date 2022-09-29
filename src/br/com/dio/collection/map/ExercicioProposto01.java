@@ -21,10 +21,10 @@ public class ExercicioProposto01 {
         System.out.println(populaçãoEstadosNE);
 
         System.out.println("Substitua a população do estado RN por : 3.534.165");
-        populaçãoEstadosNE.put("RN", 3534165);
+        populaçãoEstadosNE.replace("RN", 3534165);
         System.out.println(populaçãoEstadosNE);
 
-        System.out.println("Confira se o estado da Paraíba (PB) tucson está no dicionário, caso não, adicione " +
+        System.out.println("Confira se o estado da Paraíba (PB) está no dicionário, caso não, adicione " +
                 "PB - 4.039.277: ");
         populaçãoEstadosNE.put("PB", 4039277);
         System.out.println(populaçãoEstadosNE);
@@ -75,7 +75,7 @@ public class ExercicioProposto01 {
         System.out.println("Remova os estados com a população menor que 4.000.000: ");
         Iterator<Integer> iterator1 = populaçãoEstadosNE.values().iterator();
         while (iterator1.hasNext()) {
-            if (iterator1.next() <= 4000000) iterator1.remove();
+            if (iterator1.next() < 4000000) iterator1.remove();
         }
         System.out.println(populaçãoEstadosNE);
 
