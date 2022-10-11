@@ -46,7 +46,7 @@ public class ExercicioProposto01 {
         //exibindo o mês das temperaturas acima da média por extenso:
         System.out.println("\n\nMeses das temperaturas acima da média: ");
         Iterator<Double> iterator = temperaturas.iterator();
-
+        int acimaMedia =0;
         count = 0;
         while (iterator.hasNext()) {
             Double temp = iterator.next();
@@ -70,12 +70,12 @@ public class ExercicioProposto01 {
                     case (5):
                         System.out.printf("6 - junho: %.1f\n", temp);
                         break;
-                    default:
-                        System.out.println("Não houve temperatura acima da média.");
                 }
+                acimaMedia++;   
             }
             count++;
         }
+        if(acimaMedia==0)System.out.println("Não houve temperatura acima da média.");
     }
 }
 
