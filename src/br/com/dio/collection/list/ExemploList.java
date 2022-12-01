@@ -45,25 +45,25 @@ class ExemploList {
         System.out.println("Exiba todas as notas na ordem em que foram informados: ");
         for (Double nota : notas) System.out.println(nota);// vai imprimir um abaixo do outro
 
-        System.out.println("Exiba a terceira nota adicionada: " + notas.get(2));
+        System.out.println("Exiba a terceira nota adicionada: " + notas.get(2)); // está na posição 2 pq começa a contar do zero
         System.out.println(notas.toString());
 
         System.out.println("Exiba a menor nota: " + Collections.min(notas));
 
         System.out.println("Exiba a maior nota: " + Collections.max(notas));
 
-        Iterator<Double> iterator = notas.iterator();
-        Double soma = 0d;
-        while(iterator.hasNext()){
-            Double next = iterator.next();
-            soma += next;
+        Iterator<Double> iterator = notas.iterator(); //ao digitar notas.iterator(); e press crtl alt v, cria a variável, iterator() é método
+        Double soma = 0d; //soma inicia com zero
+        while(iterator.hasNext()){ //iterator tem próximo elemento?
+            Double next = iterator.next();//pego o prox elemento boto dentro da variavel next
+            soma += next; // e somo ela...e assim sigo o laço até dar false no iterator next, passo anterior
         }
         System.out.println("Exiba a soma dos valores: " + soma);
 
         System.out.println("Exiba a média das notas: " + (soma/notas.size()));
 
         System.out.println("Remova a nota 0: ");
-        notas.remove(0d);
+        notas.remove(0d); //se eu n boto o d ele entende que é da posição zero e não a nota zero, q é double
         System.out.println(notas);
 
         System.out.println("Remova a nota da posição 0");
@@ -71,7 +71,7 @@ class ExemploList {
         System.out.println(notas);
 
         System.out.println("Remova as notas menores que 7 e exiba a lista: ");
-        Iterator<Double> iterator1 = notas.iterator();
+        Iterator<Double> iterator1 = notas.iterator();// notas.iterator, em cima de iterator ctrl alt v e ele cria a variavel
         while(iterator1.hasNext()) {
             Double next = iterator1.next();
             if(next < 7) iterator1.remove();
