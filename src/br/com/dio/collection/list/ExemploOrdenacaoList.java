@@ -14,14 +14,16 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class ExemploOrdenacaoList {
+public class ExemploOrdenacaoList { //segundo...
     public static void main(String[] args) {
 
         List<Gato> meusGatos = new ArrayList<>(){{
             add(new Gato("Jon", 12, "preto"));
-            add(new Gato("Simba", 6, "tigrado"));
+            add(new Gato("Simba", 6, "tigrado")); // ctrl d pra duplicar a linha
             add(new Gato("Jon", 18, "amarelo"));
         }};
+        // se colocássemos aqui o Sys.out ele só imprimiria o lugar de memória. Pra dar certo temos que sobrescrever na classe gato o toString 
+        
         meusGatos.sort(Comparator.comparing(Gato::getNome));
 
 
@@ -38,7 +40,7 @@ public class ExemploOrdenacaoList {
 
         System.out.println("--\tOrdem Idade\t---");
 //        Collections.sort(meusGatos, new ComparatorIdade());
-        meusGatos.sort(new ComparatorIdade());
+        meusGatos.sort(new ComparatorIdade());/pra ser organizada sort, tem que ter o método comparable e n o comparator, n confundir
         System.out.println(meusGatos);
 
         System.out.println("--\tOrdem cor\t---");
@@ -53,17 +55,17 @@ public class ExemploOrdenacaoList {
     }
 }
 
-class Gato implements Comparable<Gato>{
+class Gato implements Comparable<Gato>{ //primeiro criar classe gato. Depois quando implementa o comparable dá erro, pressionar alt enter e implementar o método compare to
     private String nome;
     private Integer idade;
     private String cor;
 
-    public Gato(String nome, Integer idade, String cor) {
+    public Gato(String nome, Integer idade, String cor) { //construtor
         this.nome = nome;
         this.idade = idade;
         this.cor = cor;
     }
-
+    //get
     public String getNome() {
         return nome;
     }
@@ -78,7 +80,7 @@ class Gato implements Comparable<Gato>{
 
     @Override
     public String toString() {
-        return "{" +
+        return "{" + // apagou gato e botou pra rodar novamente
                 "nome='" + nome + '\'' +
                 ", idade=" + idade +
                 ", cor='" + cor + '\'' +
@@ -87,7 +89,7 @@ class Gato implements Comparable<Gato>{
 
     @Override
     public int compareTo(Gato gato) {
-        return this.getNome().compareToIgnoreCase(gato.getNome());
+        return this.getNome().compareToIgnoreCase(gato.getNome());// sobrescreveu a partir de return.Qnd meu retorno for zero os nomes são iguais, se der 1 é pq o gato que estou comparando é maior e tem que  ficar depois, se der -1 é menor
     }
 }
 
