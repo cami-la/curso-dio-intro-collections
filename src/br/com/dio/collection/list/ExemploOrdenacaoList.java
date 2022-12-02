@@ -39,8 +39,8 @@ public class ExemploOrdenacaoList { //segundo...
         System.out.println(meusGatos);
 
         System.out.println("--\tOrdem Idade\t---");
-//        Collections.sort(meusGatos, new ComparatorIdade());
-        meusGatos.sort(new ComparatorIdade());/pra ser organizada sort, tem que ter o método comparable e n o comparator, n confundir
+        Collections.sort(meusGatos, new ComparatorIdade()); // pra dar certo antes tem que criar a classe comparator
+        //meusGatos.sort(new ComparatorIdade());/pra ser organizada sort, tem que ter o método comparable e n o comparator, n confundir. posso usar esse ou o acima, ambos funcionam
         System.out.println(meusGatos);
 
         System.out.println("--\tOrdem cor\t---");
@@ -48,7 +48,7 @@ public class ExemploOrdenacaoList { //segundo...
         meusGatos.sort(new ComparatorCor());
         System.out.println(meusGatos);
 
-        System.out.println("--\tOrdem Nome/Cor/Idade\t---");
+        System.out.println("--\tOrdem Nome/Cor/Idade\t---"); // se os nomes forem iguais, critério de desempate é cor...
 //        Collections.sort(meusGatos, new ComparatorNomeCorIdade());
         meusGatos.sort(new ComparatorNomeCorIdade());
         System.out.println(meusGatos);
@@ -95,16 +95,16 @@ class Gato implements Comparable<Gato>{ //primeiro criar classe gato. Depois qua
 
 class ComparatorIdade implements Comparator<Gato> {
     @Override
-    public int compare(Gato g1, Gato g2) {
-        return Integer.compare(g1.getIdade(), g2.getIdade());
+    public int compare(Gato g1, Gato g2) { // pq é classe externa tem que mudar a nomenclatura de gato pra g1 e g2
+        return Integer.compare(g1.getIdade(), g2.getIdade());// complementou o método após o return e vai retornar o 0,1,-1
     }
 }
 
-class ComparatorCor implements Comparator<Gato> {
+class ComparatorCor implements Comparator<Gato> { // classe comparator implementa a interface comparator. Ele vai "reclamar" então implementar o método compare abaixo
 
     @Override
     public int compare(Gato g1, Gato g2) {
-        return g1.getCor().compareToIgnoreCase(g2.getCor());
+        return g1.getCor().compareToIgnoreCase(g2.getCor());// escreveu o método como o nome pq ambos são strings, porém aqui não está dentro da classe gato então usa g1 e g2, então n vai o this
     }
 }
 
@@ -113,11 +113,11 @@ class ComparatorNomeCorIdade implements Comparator<Gato> {
     @Override
     public int compare(Gato g1, Gato g2) {
         int nome = g1.getNome().compareToIgnoreCase(g2.getNome());
-        if (nome != 0) return nome;
-
+        if (nome != 0) return nome; // se o nome é diferente de zero, n são iguais, a comparação pode ser por nome;
+        // se nomes forem iguais comparar por cor...
         int cor = g1.getCor().compareToIgnoreCase(g2.getCor());
         if(cor !=0) return cor;
-
+        // se nomes e cores forem iguais ordenarei por idade
         return Integer.compare(g1.getIdade(), g2.getIdade());
 
     }
