@@ -15,7 +15,7 @@ public class ExemploOrdenacaoSet {
     public static void main(String[] args) {
 
         System.out.println("--\tOrdem aleatória\t--");
-        Set<Serie> minhasSeries = new HashSet<>(){{
+        Set<Serie> minhasSeries = new HashSet<>(){{// sempre que aparece no nome das implementações a palavra hash tem que sobrescever os métodos equals e hashCode
             add(new Serie("got", "fantasia", 60));
             add(new Serie("dark", "drama", 60));
             add(new Serie("that '70s show", "comédia", 25));
@@ -85,7 +85,7 @@ class Serie implements Comparable<Serie>{
     }
 
     @Override
-    public boolean equals(Object o) {
+    public boolean equals(Object o) {//compara
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Serie serie = (Serie) o;
@@ -93,16 +93,16 @@ class Serie implements Comparable<Serie>{
     }
 
     @Override
-    public int hashCode() {
-        return Objects.hash(nome, genero, tempoEpisodio);
+    public int hashCode() {// alt insert e gera automatico
+        return Objects.hash(nome, genero, tempoEpisodio); //o q quero comparar
     }
 
     @Override
     public int compareTo(Serie serie) {
         int tempoEpisodio = Integer.compare(this.getTempoEpisodio(), serie.getTempoEpisodio());
-        if (tempoEpisodio != 0) return tempoEpisodio;
+        if (tempoEpisodio != 0) return tempoEpisodio;//se tempo de episódios forem diferentes...
 
-        return this.getGenero().compareTo(serie.getGenero());
+        return this.getGenero().compareTo(serie.getGenero());//senao compara pelo genero
     }
 }
 
