@@ -4,7 +4,7 @@ import java.util.*;
 
 public class ExemploMap {
     public static void main(String[] args) {
-/*
+/* 
  Dada os modelos dos carros e seus respectivos consumos na estrada, faça:
  modelo = gol - consumo = 14,4km/l
  modelo = uno - consumo = 15,6 km/l
@@ -12,15 +12,15 @@ public class ExemploMap {
  modelo = hb20 - consumo = 14,5 km/l
  modelo = kwid - consumo = 15,6 km/l
  */
-
+//        diferentes formar de iniciar
 //        Map carrosPopulares2020 = new HashMap(); //antes do java 5
 //        Map<String, Double> carrosPopulares = new HashMap<>(); //Generics(jdk 5) - Diamont Operator(jdk 7)
 //        HashMap<String, Double> carrosPopulares = new HashMap<>();
 //        Map<String, Double> carrosPopulares2020 = Map.of("gol", 14.4, "uno", 15.6, "mobi", 16.1, "hb20", 14.5, "kwid", 15.6)
 
         System.out.println("Crie um dicionário que relacione os modelos e seus respectivos consumos: ");
-        Map<String, Double> carrosPopulares = new HashMap<>() {{
-            put("gol", 14.4);
+        Map<String, Double> carrosPopulares = new HashMap<>() {{//hashmap n bota em ordem d inserção
+            put("gol", 14.4);//n tem metodo add, chaves tem que ser de valores unicos, n pode gol, gol...
             put("uno", 15.6);
             put("mobi", 16.1);
             put("hb20", 14.5);
@@ -36,10 +36,10 @@ public class ExemploMap {
 
         System.out.println("Exiba o consumo do uno: " + carrosPopulares.get("uno"));
 
-//        System.out.println("Exiba o terceiro modelo adicionado: ");
+//        System.out.println("Exiba o terceiro modelo adicionado: ");//no map e no set n tem método que possa mostrar***
 
         System.out.println("Exiba os modelos: ");
-        Set<String> modelos = carrosPopulares.keySet();
+        Set<String> modelos = carrosPopulares.keySet();//keyset retorna set
         System.out.println(modelos);
 
         System.out.println("Exiba os consumos dos carros: ");
