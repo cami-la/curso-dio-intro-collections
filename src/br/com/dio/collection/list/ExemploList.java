@@ -7,6 +7,8 @@ class ExemploList {
     public static void main(String[] args) {
 // Dada uma lista com 7 notas de um aluno [7, 8.5, 9.3, 5, 7, 0, 3.6], faça:
 
+// Thiago Hassan, by
+
 //      List notas = new ArrayList(); //antes do java 5
 //      ArrayList<Double> notas = new ArrayList<>();
 //      List<Double> notas = new ArrayList<>(Arrays.asList(7d, 8.5, 9.3, 5d, 7d, 0d, 3.6));
